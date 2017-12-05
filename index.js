@@ -159,7 +159,7 @@ function isVersionPegged(version) {
     return range.set.every(function (comparators) {
       return comparators.length === 1 && String(comparators[0].operator || '') === '';
     });
-  } catch {
+  } catch (e) {
     // semver.Range doesn't support all version specifications (like git
     // references), so if it raises an error, assume the dep can be left
     // untouched:
