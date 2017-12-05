@@ -1,10 +1,10 @@
 {
-  "name": "salita",
+  "name": "@mceachen/salita",
   "bin": "bin/salita",
   "version": "0.10.1",
   "description": "Automatically upgrade all dependencies, devDependencies, and peerDependencies",
   "main": "index.js",
-  "scripts": {
+  "broken-scripts": {
     "lint": "npm run --silent jscs && npm run --silent eslint",
     "pretest": "npm run --silent lint",
     "eslint": "eslint *.js bin/salita",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tbranyen/salita.git"
+    "url": "git://github.com/mceachen/salita.git"
   },
   "contributors": [
     "Tim Branyen (https://github.com/tbranyen)",
